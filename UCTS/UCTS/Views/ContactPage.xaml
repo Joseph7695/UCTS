@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCTS.Views.ContactPage"
+             Title="Contact Us">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="15,10,15,0">
+            <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" FontSize="Medium" Text="University College of Technology Sarawak&#x0a;868 Persiaran Brooke,&#x0a;96000 Sibu, Sarawak,&#x0a;Malaysia&#x0a;&#x0a;Tel:  (+6) 084-367300&#x0a;&#x0a;Fax:  (+6) 084-367301&#x0a;&#x0a;Email:  enquiry@ucts.edu.my"/>
+                    <Label Grid.Column="1" FontSize="Medium" Text="Our Kuching Marketing Office&#x0a;Lot 517 Ground Floor&#x0a;Section 6 K.L.T.D&#x0a;93400 Kuching, Sarawak,&#x0a;Malaysia&#x0a;&#x0a;Tel:  (+6) 082-422622"/>
+            </Grid>
+            <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="cute_email.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Email_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="1" Source="cute_instagram.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Insta_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="2" Source="cute_facebook.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Facebook_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="3" Source="cute_google.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Google_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="4" Source="cute_youtube.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Youtube_Tapped" NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+        
+</ContentPage>

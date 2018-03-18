@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCTS.Views.SchoolsPage"
+             Title="School">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Margin="15,0,15,0" Grid.Row="1" Text="Schools" HorizontalOptions="StartAndExpand" FontSize="Large" TextColor="#333333"/>
+                <Image Margin="0,0,0,15" Grid.Row="0" Source="school.jpg"/>
+                <Label Margin="15,5,15,0" Grid.Row="2" Text="University College of Technology Sarawak presently has six academic schools namely:" FontSize="Medium" TextColor="#666666" />
+
+                <Label Grid.Row="3" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,30,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="4" Text="School of Foundation Studies (SFS)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SFS_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="4">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SFS_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,0,15,0" Grid.Row="5" x:Name="SFS" IsVisible="False" >
+                    <Label Text="The School of Foundation Studies prepares students through its one-year Foundation in Arts and Foundation in Science programmes for degree level studies.  The School also offers the university subjects (UCS) to all students studying at UCTS." FontSize="14" TextColor="#666666" Margin="15,10,15,20"/>
+                </StackLayout>
+
+                <Label Grid.Row="6" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+                
+                <Label Margin="15,0,15,0"  Grid.Row="7" Text="School of Engineering and Technology (SET)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SET_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="7">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SET_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="8" x:Name="SET" IsVisible="False" Margin="15,10,15,20">
+                    <Label Text="The School of Engineering and Technology offers programmes in Engineering and Technology. Presently the school offers six degree programmes namely" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Civil Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Engineering Technology in Electrical and Electronic" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Mechanical Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Food Technology" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Electrical Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Manufacturing Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Grid.Row="9" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="10" Text="School of Business and Management (SBM)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SBM_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="10">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SBM_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="11" x:Name="SBM" IsVisible="False" Margin="15,10,15,20">
+                    <Label Text="The School of Business and Management offers programmes that are related to business and management.  Presently the school has two degree programmes namely" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Business Administration (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Accountancy (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Grid.Row="12" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="13" Text="School of Built Environment (SBE)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SBE_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="13">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SBE_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="14" x:Name="SBE" IsVisible="False" Margin="15,10,15,20">
+                    <Label Text="The School of Built Environment offers two degree programmes namely" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Quantity Surveying" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="Bachelor of Science in Architecture" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="The Bachelor of Quantity Surveying has obtained provisional accreditation from the Board of Quantity Surveyors Malaysia (BQSM) whilst the Bachelor of Science in Architecture has been designed to meet the Part 1 requirement of Board of Architects Malaysia (LAM)." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Grid.Row="15" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="16" Text="School of Computing (SOC)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SOC_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="16">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SOC_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="17" x:Name="SOC" IsVisible="False" Margin="15,10,15,20" >
+                <Label Text="The School of Computing presently offers two degree programmes namely" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Bachelor of Computer Science in Software Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Bachelor of Computer Science in Network Computing" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Grid.Row="18" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="19" Text="School of Postgraduate Studies (SPG)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SPG_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="19">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SPG_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="20" x:Name="SPG" IsVisible="False" >
+                    <Label Text="The School of Postgraduate Studies manages all postgraduate programmes offered in collaboration with other Schools." FontSize="14" TextColor="#666666" Margin="15,10,15,20"/>
+                </StackLayout>
+                    
+                <Label Grid.Row="21" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <Label Margin="15,0,15,0" Grid.Row="22" Text="University Courses Unit (UCU)" HorizontalOptions="StartAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="UCU_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="22">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="UCU_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="23" x:Name="UCU" IsVisible="False" >
+                    <Label Text="The University Courses Unit (UCU) was established as part of UCTS' efforts in fulfilling the requirements of the Malaysian Qualifications Agency (MQA) in which all Malaysian and non-Malaysian students must complete and pass the University Compulsory Subjects (UCS) and General Studies (Mata Pelajaran Umum or MPU) as a prerequisite for the award of a certificate, diploma or undergraduate degree." FontSize="14" TextColor="#666666" Margin="15,10,15,20"/>
+                </StackLayout>
+                
+                <Label Grid.Row="24" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="0,5,0,5"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

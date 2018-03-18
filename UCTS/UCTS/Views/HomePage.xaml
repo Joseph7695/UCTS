@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCTS.Views.HomePage"
+             xmlns:forms="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:local="clr-namespace:UCTS;assembly=UCTS"
+             Title="Welcome to UCTS">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <forms:CarouselView x:Name="MainCarouselView"
+                                    Margin="0,0,0,0"
+                                    Grid.Row="0"
+                                    BackgroundColor="DarkBlue"
+                                    VerticalOptions="FillAndExpand"
+                                    >
+                    <forms:CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding .}"
+                                   VerticalOptions="Start" />
+                        </DataTemplate>
+                    </forms:CarouselView.ItemTemplate>
+                </forms:CarouselView>
+                <Label Grid.Row="1" Margin="15,30,15,15"
+                       Text="About the University" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="#333333"/>
+                <Image Grid.Row="2" Margin="0,0,0,0"
+                       Source="aboutbanner.jpg" />
+                <Label Grid.Row="3"
+                       Margin="15,5,15,0"
+                       Text="University College of Technology Sarawak (UCTS) is the culmination of the State of Sarawak's vision and commitment in establishing a world-class institution of higher learning to spearhead the development and production of technical human resource for the Sarawak Corridor of Renewable Energy (SCORE)." 
+                       FontSize="14" TextColor="#666666"/>
+
+                <Label Grid.Row="4"
+                       Margin="15,5,15,0"
+                       x:Name="label1" FontSize="14" TextColor="#666666" IsVisible="False">
+                    <Label.Text>
+                        UCTS is committed to facilitating students' access to an affordable world-class university education that nurtures creative and entrepreneurial leaders through a broad education in science and technology while combining the career benefits of an applied approach for SCORE-related research and career opportunities.
+                                                
+Situated in Sibu, one of the main gateways into SCORE, UCTS’ campus is equipped with the latest state-of-the-art facilities to facilitate teaching, learning and research activities necessary in the production of graduates required by the industries within SCORE.
+                        
+In addition, UCTS will be complemented by its own Science and Technology Park, which will bring about vast research and entrepreneurial opportunities through local and international industrial and educational collaborations.
+                        
+Through its close collaboration with Universiti Kuala Lumpur, one of Malaysia’s leading technical universities with over 20,000 students across the country, UCTS aims to complement the growth and fulfil the human resource and industrial needs of SCORE.
+                    </Label.Text>
+                </Label>
+
+                <Label Grid.Row="5"
+                       Margin="15,5,15,0"
+                       x:Name="labelVision" Text="VISION" FontAttributes="Bold" FontSize="14" TextColor="#666666" IsVisible="False"/>
+                <Label Grid.Row="6"
+                       Margin="15,0,15,0"
+                       x:Name="labelVisionText" Text="Our vision is to be a global technical university founded on science and technology." FontSize="14" TextColor="#666666" IsVisible="False" />
+                <Label Grid.Row="7"
+                       Margin="15,5,15,0"
+                       x:Name="labelMission" Text="MISSION" FontAttributes="Bold" FontSize="14" TextColor="#666666" IsVisible="False"/>
+                <Label Grid.Row="8"
+                       Margin="15,0,15,0"
+                       x:Name="labelMissionText" Text="Our mission is to provide world-class educational programs and learning environment to nurture creative and entrepreneurial leaders through a broad yet specialised education in science and technology." FontSize="14" TextColor="#666666" IsVisible="False" />
+                <Label Grid.Row="9"
+                       Margin="15,5,15,0"
+                       x:Name="labelCore" Text="CORE VALUES" FontAttributes="Bold" FontSize="14" TextColor="#666666" IsVisible="False"/>
+                <Label Grid.Row="10"
+                       Margin="15,0,15,0"
+                       x:Name="labelCoreText" Text="The core values that guide us in our mission are Commitment, Integrity, Caring, Enterprising, and Green." FontSize="14" TextColor="#666666" IsVisible="False" />
+
+
+                <Label Grid.Row="11"
+                       Margin="15,5,15,0"
+                       x:Name="more1" Text="Read More..." HorizontalOptions="CenterAndExpand" FontSize="14" FontAttributes="Italic" TextColor="#504dcc">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="more1TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Grid.Row="12"
+                       Margin="15,5,15,0"
+                       x:Name="hide1" Text="Hide" HorizontalOptions="CenterAndExpand" FontSize="14" FontAttributes="Italic" TextColor="#504dcc" IsVisible="False">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="hide1TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label Grid.Row="13"
+                       Margin="15,15,15,15"
+                       BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+                <Label Grid.Row="14"
+                       Margin="15,0,15,0"
+                       Text="Virtual Tour" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="#333333"/>
+                <Image Grid.Row="15"
+                       Margin="0,0,0,0"
+                       Source="banner4.jpg" VerticalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Banner4TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Row="16"
+                       Margin="30,15,30,0"
+                       Text="Click HERE to start Virtual Tour" 
+                       FontSize="16" TextColor="#26247b" HorizontalOptions="CenterAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="VirtualTapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+
+                <!--"<Label Text="Scholarships" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="#333333" Margin="0,15,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ScholarshipsTapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image Source="UCTS.Images.banner2.jpg" HorizontalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Banner2TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="There are several scholarships available to students at UCTS.  Below is the list of various scholarships. UCTS Foundation Sponsorship Study sponsorships are available to Malaysian students to pursue the Foundation Programmes at UCTS. The study sponsorship covers the full tuition fees. To..." 
+                       FontSize="14" TextColor="#666666"/>
+
+                <Label Text="Learning Environment" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="#333333" Margin="0,15,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LearningTapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Image Source="UCTS.Images.banner3.jpg" HorizontalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Banner3TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="University College of Technology Sarawak (UCTS) is the very first University in Malaysia to achieve a GBI &quot;Platinum Index&quot; rating through its futuristically designed campus and state-of-the-art facilities. UCTS' campus incorporates planning, design and green architecture simultaneously and effectively to create..." 
+                       FontSize="14" TextColor="#666666"/>
+
+                -->
+
+            </Grid>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

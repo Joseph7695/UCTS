@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCTS.Views.ProgrammesPage"
+             Title="Programmes">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="0,10,0,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="line3" Height="Auto"/>
+                    <RowDefinition Height="Auto"/> <!--Label-->
+                    <RowDefinition x:Name="stackRow" Height="Auto"/>
+                    <RowDefinition x:Name="line" Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition x:Name="stack1Row" Height="Auto"/>
+                    <RowDefinition x:Name="line1" Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition x:Name="stack2Row" Height="Auto"/>
+                    <RowDefinition x:Name="line2" Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.Children>
+                <!--Foundation-->
+                <Label Grid.Row="0" BackgroundColor="#cccccc" HeightRequest="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,0,0,15"/>
+                <Label Grid.Row="1" x:Name="foundation" Text="Foundation Programmes" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="#333333">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Foundation_Tapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="1">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Foundation_Tapped" NumberOfTapsRequired="1"/>
+                        </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,30" VerticalOptions="EndAndExpand" x:Name="stack" Grid.Row="2" IsVisible="False" Opacity="0">
+                   <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Foundation_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label x:Name="foundation1" Text="Intakes: May &amp; September" FontSize="14" TextColor="#666666" Margin="0,5,0,0" IsVisible="True"/>
+                    <Image Source="foundation2.jpg" VerticalOptions="CenterAndExpand" Margin="-15,0,-15,0"/>
+                    <Image Source="foundation.jpg" HorizontalOptions="CenterAndExpand" Margin="-15,0,-15,0"/>
+                    <Label x:Name="foundation3" Text="UCTS presently offers two Foundation programmes as follows:" FontSize="14" TextColor="#666666" Margin="0,5,0,0" IsVisible="True"/>
+                    <Label x:Name="foundation4" Text="Foundation in Science" FontSize="14" TextColor="#666666" Margin="0,5,0,0" IsVisible="True"/>
+                    <Label x:Name="foundation5" Text="Foundation in Arts" FontSize="14" TextColor="#666666" Margin="0,5,0,0" IsVisible="True"/>
+                    <Button x:Name="foundation6" Text="Apply Here" FontSize="14" TextColor="#666666" Margin="0,5,0,0" IsVisible="True" Clicked="foundation6_Clicked"/>
+                </StackLayout>
+                
+                
+                <Label Grid.Row="3" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                    <!--Undergrad-->
+                <Label Grid.Row="4" x:Name="undergraduate" Text="Undergraduate Programmes" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Undergrad_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="4">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Undergrad_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="5" x:Name="stack1" Margin="15,10,15,30" IsVisible="False" Opacity="0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Undergrad_Tapped" NumberOfTapsRequired="1"/>
+                        </StackLayout.GestureRecognizers>
+                    <Label x:Name="undergraduate1" IsVisible="True" FontSize="14" TextColor="#666666" Margin="0,5,0,0" Text="Yearly Intakes: February, April &amp; September"/>
+                    <Image Source="undergraduate2.jpg" VerticalOptions="CenterAndExpand" Margin="-15,0,-15,0"/>
+                    <Image Source="undergraduate.jpg" HorizontalOptions="CenterAndExpand" Margin="-15,0,-15,0"/>
+                    <Label x:Name="undergraduate3" IsVisible="True" Text="School of Engineering and Technology (SET)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate4" IsVisible="True" Text="Bachelor of Civil Engineering (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate5" IsVisible="True" Text="Bachelor of Engineering Technology in Electrical &amp; Electronic (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate6" IsVisible="True" Text="Bachelor of Mechanical Engineering (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate7" IsVisible="True" Text="Bachelor of Electrical Engineering (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate8" IsVisible="True" Text="Bachelor of Food Technology (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+    
+                    <Label x:Name="undergraduate9" IsVisible="True" Text="School of Business and Management (SBM)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate10" IsVisible="True" Text="Bachelor of Business Administration (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate11" IsVisible="True" Text="Bachelor of Business (Hons) in Marketing new3" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate12" IsVisible="True" Text="Bachelor of Accountancy (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+
+                    <Label x:Name="undergraduate13" IsVisible="True" Text="School of Built Environment (SBE)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate14" IsVisible="True" Text="Bachelor of Quantity Surveying (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate15" IsVisible="True" Text="Bachelor of Science in Architecture (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+    
+                    <Label x:Name="undergraduate16" IsVisible="True" Text="School of Computing (SOC)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate17" IsVisible="True" Text="Bachelor of Computer Science in Software Engineering (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate18" IsVisible="True" Text="Bachelor of Computer Science in Network Computing (Hons)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+    
+                    <Label x:Name="undergraduate19" IsVisible="True" Text="Non-formal Entry – Accreditation Of Prior Experiential Learning (APEL)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="undergraduate20" IsVisible="True" Text="UCTS also welcomes applications from persons of at least 21 years of age who do not qualify for admission on the basis of formal educational attainment." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+
+                    <Button x:Name="undergraduate21" IsVisible="True" Text="Apply Here" FontSize="14" TextColor="#666666" Margin="0,5,0,0" Clicked="undergraduate21_Clicked"/>
+                </StackLayout>
+
+                    
+                <Label Grid.Row="6" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+
+                <!--Postgrad-->
+                <Label Grid.Row="7" x:Name="postgraduate" Text="Postgraduate Programmes" HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="#333333">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Postgrad_Tapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <BoxView Grid.Row="7">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Postgrad_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Grid.Row="8" x:Name="stack2" Margin="15,10,15,0" IsVisible="False" Opacity="0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Postgrad_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image x:Name="postgraduate1" IsVisible="True" Source="postgraduate.jpg" Margin="-15,0,-15,0"/>
+                    <Image x:Name="postgraduate2" IsVisible="True" Source="postgraduate2.jpg" Margin="-15,0,-15,0"/>
+                    <Label x:Name="postgraduate3" IsVisible="True" Text="By CourseWork" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate4" IsVisible="True" Text="Master of Business Administration (MBA)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate5" IsVisible="True" Text="Master of Project Management" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate6" IsVisible="True" Text="By Research" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate7" IsVisible="True" Text="Master of Science in Business Management " FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate8" IsVisible="True" Text="Master of Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate9" IsVisible="True" Text="Doctor of Philosophy (PhD) in Engineering" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate10" IsVisible="True" Text="Doctor of Philosophy (PhD) in Business Management" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate11" IsVisible="True" Text="Click to view Programmes by Research Synopses" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate12" IsVisible="True" Text="Non-formal Entry – Accreditation Of Prior Experiential Learning (APEL)" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label x:Name="postgraduate13" IsVisible="True" Text="UCTS also welcomes applications from persons of at least 30 years of age who do not qualify for admission on the basis of formal educational attainment through Non-formal Entry via APEL." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Button x:Name="postgraduate14" IsVisible="True" Text="Apply Here" FontSize="14" TextColor="#666666" Margin="0,5,0,0" Clicked="postgraduate14_Clicked"/>
+                </StackLayout>
+
+                    
+                <Label Grid.Row="9" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,15,0,15"/>
+                </Grid.Children>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

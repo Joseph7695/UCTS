@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCTS.Views.FaqsPage"
+             Title="FAQs">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <!--<RowDefinition Height="Auto"/>-->
+                </Grid.RowDefinitions>
+
+                <Label Margin="15,10,15,0"
+                       Grid.Row="0" Text="Frequently Asked Questions (FAQs)" FontSize="Large" TextColor="#333333" HorizontalOptions="Center"/>
+                <Image Margin="0,10,0,0" Grid.Row="1" Source="faq.jpg"/>
+
+                <Label Margin="15,25,15,15" Grid.Row="2" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+
+                <Label Margin="15,15,15,0" Grid.Row="3" x:Name="AboutUCTS" Text="About UCTS" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="AboutUcts_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0" Grid.Row="3" x:Name="box1" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AboutUcts_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             Grid.Row="4" x:Name="About_UCTS" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AboutUcts_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label 
+                           Text="Q.  Is UCTS a public or private university?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label 
+                           Text="A.  UCTS is a private university registered with the Ministry of Higher Education under the IPTS Act 555." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label 
+                           Text="Q.  Who is the owner of UCTS?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label 
+                           Text="A.   UCTS is fully owned by the Sarawak State Government through the State Financial Secretary Incorporated." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="5" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+
+                <Label Margin="15,15,15,0"
+                       Grid.Row="6" x:Name="item2" Text="Academic Programmes" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Academic_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                         Grid.Row="6" x:Name="box2" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Academic_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                    Grid.Row="7" x:Name="AcademicProgramme" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Academic_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="Q.  What are the programmes offered at UCTS?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.   Click here for the list of programmes offered." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  What are the academic qualifications required to be admitted into a particular programme?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.   Academic qualifications vary by programme.  Hence, click on the link of the particular programme of your interest and look up for the required academic qualifications." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  Are UCTS' programmes recognised?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  All UCTS' programmes are accredited by the Malaysian Qualification Agency (MQA) and approved by the Ministry of Higher Education Malaysia." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  I am a Diploma holder. Will I be granted credit transfer from my previous study?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Candidates with a related / relevant and recognised Diploma qualification can apply for credit transfer up to 30% of the degree programme's total credits. Credit transfer can be given for subject where candidates have obtained Grade C, have about 80% syllabus similarity and have same credit value." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="8" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+                <Label Margin="15,15,15,0"
+                       Grid.Row="9" x:Name="item3" Text="Full-Time Programmes" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Fullprog_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                    Grid.Row="9" x:Name="box3" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Fullprog_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             Grid.Row="10" x:Name="Fullprog" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Fullprog_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="Q.  How do I apply for UCTS full-time programmes?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="A.  For Foundation Programmes, click here." FontSize="16" TextColor="#26247b">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Admission_Tapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="A.  For Undergraduate Programmes, click here." FontSize="16" TextColor="#26247b">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Admission_Tapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="A.  For Postgraduate Programmes, click here." FontSize="16" TextColor="#26247b">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Admission_Tapped" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="11" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+                <Label Margin="15,15,15,0"
+                       x:Name="item4" Grid.Row="12" Text="Part-Time Programmes" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Partprog_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                         x:Name="box4" Grid.Row="12">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Partprog_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             x:Name="Partprog" Grid.Row="13" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Partprog_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="Q.  Does UCTS offer part-time programmes?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.   Currently UCTS only offers the MBA Programme which is delivered during weekends/evenings (part-time mode).  Master and PhD programmes by research mode can also be undertaken on part-time basis." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  Does UCTS offer part-time degree programmes?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  UCTS does not offer part-time degree programmes." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="14" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+                <Label Margin="15,15,15,0"
+                       x:Name="item5" Grid.Row="15" Text="Tuition Fees &amp; Rebates" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Fee_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                         x:Name="box5" Grid.Row="15">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Fee_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             x:Name="Fee" Grid.Row="16" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Fee_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="Q.  What are the tuition fees for the programmes?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="A.  Tuition fees vary by programme.  Click here for an overview of tuition fees." FontSize="16" TextColor="#26247b" Margin="0,5,0,0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Tuitionfee_Tapped" NumberOfTapsRequired="1"/>
+                        </StackLayout.GestureRecognizers>
+                    </Label>
+                    <Label Text="Q. When am I supposed to pay for the tuition fees?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Tuition fees are payable at the point of semester registration and based on the number of credits taken for the semester. " FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  Can the tuition fees be paid by instalment?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Yes, tuition fees can be paid by instalment subject to conditions." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  I want to do Foundation Programme. How much do I have to pay for the 1st semester?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="A.  The University offers scholarship to pay for the tuition fees of the Foundation Programmes. To be eligible for the Foundation Programmes scholarship, the student must obtain minimum 2A's, 2B's and 1C in their SPM examination. There are conditions attached for the Foundation Programmes scholarship. If a student has to pay for the Foundation Programme fees, the amount for Semester 1 is as follows:&#x0a;Tuition Fees: RM 4,000 &#x0a;Registration Fees: RM 1,100 &#x0a;Total Amount = RM 5,100" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q.  Do I have to pay for any registration fees?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.   Yes, there are two categories of registration fees as follows:&#x0a;(a) One-off Registration Fees (payable once during first registration). The amount is RM 350 to cover for orientation, university official uniform and student ID card. There is also a security deposit amount of RM 400.  The deposit is refundable when a student leaves the university but subject to terms and conditions.&#x0a;(b) Recurring Registration Fees. The recurring fees are payable for every semester amounting to RM 350 to cover for student insurance, student activities, resources and general administration. The total registration fees payable for Category (a) is thus RM 350 + RM 400 + RM 350 = RM 1,100. The total registration fees payable for Category (b) and following semesters is RM 350.&#x0a;The above-mentioned amount is subject to review/change." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="Q. Does UCTS still offer rebate on tuition fees for 2017 intake?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Effective January 2017, there is no more tuition fees rebate for new intakes." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="17" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+                <Label Margin="15,15,15,0"
+                       x:Name="item6" Grid.Row="18" Text="Sponsorships / Scholarships" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Sponsor_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                         x:Name="box6" Grid.Row="18">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Sponsor_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             Grid.Row="19" x:Name="Sponsor" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Sponsor_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                <Label Text="Q.  Does UCTS provide any sponsorship?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="A.   Yes.  Click here for information on sponsorships available." FontSize="16" TextColor="#26247b" Margin="0,5,0,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Sponsorship_Tapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                </Label>
+                <Label Text="Q. I want to apply for PTPTN. Will the University assist me in the application?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Yes, our Student Development &amp; Services Department (SDSD) will assist students to apply for PTPTN loan." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Margin="15,25,15,15"
+                       Grid.Row="20" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+
+                <Label Margin="15,15,15,0"
+                       x:Name="item7" Grid.Row="21" Text="Students Accommodations" FontSize="25" TextColor="#333333" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Accommodation_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+                </Label>
+                <BoxView Margin="15,10,15,0"
+                         x:Name="box7" Grid.Row="21">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Accommodation_Tapped" NumberOfTapsRequired="1"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <StackLayout Margin="15,10,15,0"
+                             x:Name="Accommodation" Grid.Row="22" IsVisible="False">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Accommodation_Tapped" NumberOfTapsRequired="1"/>
+                    </StackLayout.GestureRecognizers>
+                <Label Text="Q.  Does UCTS have university accommodation for students and what is the cost?" FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                <Label Text="A.  Yes, UCTS has university accommodation for registered students but priorities shall be given to outstation students." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                    <Label Text="A.  Click here for information on student accommodation." FontSize="16" TextColor="#26247b" Margin="0,5,0,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Studentaccommodation_Tapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text="Note:  If you still have further questions, please do not hesitate to contact us." FontSize="14" TextColor="#666666" Margin="0,5,0,0"/>
+                </StackLayout>
+
+                <Label Margin="15,25,15,0"
+                       Grid.Row="23" BackgroundColor="#cccccc" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

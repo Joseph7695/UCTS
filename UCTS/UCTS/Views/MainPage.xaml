@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:customControls="clr-namespace:UCTS"
+             x:Class="UCTS.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <!--xmlns:local="clr-namespace:MasterDetailPageNavigation;assembly=MasterDetailPageNavigation"-->
+    
+    <MasterDetailPage.Master>
+        <ContentPage x:Name="masterpage" Title="Menu" BackgroundColor="#e8e8e8" Icon="hamburger.png">
+            
+            <ContentPage.Padding>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <OnPlatform.iOS>0,20,0,0</OnPlatform.iOS>
+                    <OnPlatform.Android>0,0,0,0</OnPlatform.Android>
+                </OnPlatform>
+            </ContentPage.Padding>
+
+            <StackLayout Orientation="Vertical">
+                <StackLayout.Children>
+                    <Label Text="{Binding Header}"/>
+                    <Image Source="{Binding Image}" HeightRequest="80" Aspect="AspectFit"/>
+                </StackLayout.Children>
+
+                <ListView x:Name="navigationMenuList"
+                          RowHeight="50"
+                          SeparatorVisibility="Default"
+                          BackgroundColor="#e8e8e8"
+                          
+                          >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<customControls:ExtendedViewCell SelectedBackgroundColor="#8f8dd6">-->
+                            <ViewCell>
+                                <ViewCell.View>
+                                        <StackLayout 
+                                                     Orientation="Horizontal"
+                                                     >
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                            </StackLayout.GestureRecognizers>
+                                            <Label Text="{Binding Title}"
+                                                   Margin="20,0,0,0"
+                                                   FontSize="Small"
+                                                   VerticalOptions="CenterAndExpand"
+                                                   TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                            <!--</customControls:ExtendedViewCell>-->
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
